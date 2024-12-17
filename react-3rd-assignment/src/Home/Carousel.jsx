@@ -3,14 +3,14 @@ import React, { useState } from "react";
 import { Card, CardBody, Image } from "@nextui-org/react";
 
 const carouselItems = [
-  { id: 1, image: "c-1.png", title: "Bottega", description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.", rating: 5.0 },
-  { id: 1, image: "c-2.png", title: "Bottega", description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.", rating: 4.8 },
-  { id: 1, image: "c-3.png", title: "Bottega", description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.", rating: 4.6 },
+  { id: 1, image: "ca-1.png", title: "Bottega", description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.", rating: 5.0 },
+  { id: 1, image: "ca-2.png", title: "Bottega", description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.", rating: 4.8 },
+  { id: 1, image: "ca-3.png", title: "Bottega", description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.", rating: 4.6 },
   { id: 1, image: "c-4.png", title: "Bottega", description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.", rating: 5.0 },
-  { id: 1, image: "c-1.png", title: "Bottega", description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.", rating: 3.0 },
-  { id: 1, image: "c-2.png", title: "Bottega", description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.", rating: 5.0 },
-  { id: 1, image: "c-3.png", title: "Bottega", description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.", rating: 4.9 },
-  { id: 1, image: "c-4.png", title: "Bottega", description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.", rating: 5.0 },
+  { id: 1, image: "ca-1.png", title: "Bottega", description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.", rating: 3.0 },
+  { id: 1, image: "ca-2.png", title: "Bottega", description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.", rating: 5.0 },
+  { id: 1, image: "ca-3.png", title: "Bottega", description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.", rating: 4.9 },
+  { id: 1, image: "ca-4.png", title: "Bottega", description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.", rating: 5.0 },
   
 ];
 
