@@ -4,6 +4,7 @@ import Carousel from './Carousel'
 import Card1 from './Card1'
 import Hero from './Hero'
 import Review from './Review'
+import Footer from './Footer'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <Card1 />
         <Hero />
         <Review />
+        <Footer />
     </main>
   )
 }
