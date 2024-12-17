@@ -1,5 +1,6 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+import RestaurantSection from "../common/Restaurant";
 
 const ResultsPage = () => {
   const location = useLocation();
@@ -18,9 +19,11 @@ const ResultsPage = () => {
   }, [selectedLocation, selectedRestaurant, navigate]);
 
   return (
-    <div className="flex items-center justify-center h-screen bg-white">
-      <h1 className="text-4xl font-bold">Welcome</h1>
+    <>
+    <div>
+      <RestaurantSection />
     </div>
+    </>
   );
 };
 
