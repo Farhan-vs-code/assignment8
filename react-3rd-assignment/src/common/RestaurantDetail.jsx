@@ -1,15 +1,31 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import Hero2 from "./Hero2";
+import ImageSection from "./Image";
+import LocationSection from "./MoreInformations";
+import RatingSection from "./Rating";
+import Cared2 from "./Cared2";
+import Card3 from "./Card3";
+import FooterSection from "../Home/Footer";
 
 const RestaurantDetail = () => {
   const { id } = useParams();
 
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
-      <h1 className="text-3xl font-bold text-gray-800">
-        Welcome to Restaurant {id}
-      </h1>
-    </div>
+    
+      <main>
+      
+        <Hero2 /> 
+        <ImageSection />
+        <LocationSection />
+        <RatingSection />
+        <Cared2 />
+        <Card3 />
+        <FooterSection />
+        
+         {id}
+      </main>
+    
   );
 };
 

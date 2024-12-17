@@ -13,10 +13,10 @@ const initialCards = [
 
 const RestaurantSection = () => {
   const [cards, setCards] = useState(initialCards);
-  const [isOpen, setIsOpen] = useState(false); // Modal toggle state
+  const [isOpen, setIsOpen] = useState(false); 
   const navigate = useNavigate();
 
-  // Filter handler
+  
   const handleFilter = (type) => {
     let sortedCards = [...cards];
     if (type === "highest") {
@@ -25,16 +25,16 @@ const RestaurantSection = () => {
       sortedCards.sort((a, b) => a.rating - b.rating);
     }
     setCards(sortedCards);
-    setIsOpen(false); // Close modal/dropdown
+    setIsOpen(false); 
   };
   const goToHome = () => {
-    navigate("/");  // Navigates to the Home page
+    navigate("/");  
   };
 
   return (
     <section className="py-8 px-4">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-        {/* Left Side Content */}
+     
         <div className="md:col-span-6 md:ml-14">
           <p className="font-semibold mb-2" onClick={goToHome}>Home / All Restaurants</p>
           <div className="flex gap-4">
@@ -46,7 +46,7 @@ const RestaurantSection = () => {
             Short
           </button>
           </div>
-          {/* Filter Dropdown */}
+    
           {isOpen && (
             <div className="bg-white border rounded shadow-md p-4 w-48">
               <button
@@ -64,7 +64,7 @@ const RestaurantSection = () => {
             </div>
           )}
 
-          {/* Cards Grid */}
+      
           <div className="grid grid-cols-1 gap-6">
             {cards.map((card) => (
               <div
@@ -94,7 +94,6 @@ const RestaurantSection = () => {
           </div>
         </div>
 
-        {/* Right Side Location Image */}
         <div className="md:col-span-6 flex justify-center items-center">
           <img
             src="l-1.png"
