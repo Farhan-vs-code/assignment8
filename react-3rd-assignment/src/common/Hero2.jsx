@@ -2,9 +2,15 @@ import React from "react";
 import { FaMapMarkerAlt, FaClock } from "react-icons/fa";
 
 const Hero2 = () => {
+
+  const goToHome = () => {
+    navigate("/");  
+  };
   return (
+    <>
+     <button className="font-semibold mb-2 p-4 cursor-pointer" onClick={goToHome}>Home / BellaItalia</button>
     <section className="relative bg-cover bg-center h-[500px] md:h-[600px]" style={{ backgroundImage: "url('/b-1.png')" }}>
-      
+   
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
      
@@ -47,6 +53,7 @@ const Hero2 = () => {
         />
       </div>
     </section>
+    </>
   );
 };
 
