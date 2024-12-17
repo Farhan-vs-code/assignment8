@@ -2,11 +2,10 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Header = () => {
-  const [location, setLocation] = useState(""); // লোকেশন স্টেট
-  const [restaurant, setRestaurant] = useState(""); // রেস্টুরেন্ট স্টেট
+  const [location, setLocation] = useState(""); 
+  const [restaurant, setRestaurant] = useState(""); 
   const navigate = useNavigate();
 
-  // লোকেশন এবং রেস্টুরেন্ট সিলেক্ট হলে রিডিরেক্ট করবে
   useEffect(() => {
     if (location && restaurant) {
       navigate(`/results?location=${location}&restaurant=${restaurant}`);
@@ -14,6 +13,7 @@ const Header = () => {
   }, [location, restaurant, navigate]);
 
   return (
+    <>
     <header className="flex justify-around items-center p-4">
      
       <div className="md:flex hidden text-2xl font-bold">
@@ -22,7 +22,6 @@ const Header = () => {
 
     
       <div className="flex space-x-4">
-        {/* লোকেশন ড্রপডাউন */}
         <select
           className="p-2  rounded border-[1px] border-[#ADADAD]"
           value={location}
@@ -35,7 +34,6 @@ const Header = () => {
           <option value="Paris">Paris</option>
         </select>
 
-        {/* রেস্টুরেন্ট ড্রপডাউন */}
         <select
           className="p-2  rounded border-[1px] border-[#ADADAD]"
           value={restaurant}
@@ -60,7 +58,10 @@ const Header = () => {
         </button>
 
       </div>
+     
     </header>
+    <div className="h-[1px] bg-gray-300"></div>
+    </>
   );
 };
 
