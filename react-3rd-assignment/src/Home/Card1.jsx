@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Card, CardBody, Image } from "@nextui-org/react";
+import { Card, CardBody, Image, Button } from "@nextui-org/react";
 
 const cardItems = [
   { id: 1, image: "c-1.png", title: "Bella Italia", description: "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.", rating: 4.8 },
@@ -62,6 +62,10 @@ const Card1 = () => {
             </CardBody>
           </Card>
         ))}
+      </div>
+      <div className="">
+        <h1 className="text-center m-5 text-3xl font-bold">Discover more cool restaurants</h1>
+        <Button className="bg-[#1677BD] text-white rounded-full md:mx-[47%] mx-24">Show more</Button>
       </div>
     </section>
   );
